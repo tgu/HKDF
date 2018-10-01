@@ -1,4 +1,4 @@
-// swift-tools-version:4.0
+// swift-tools-version:4.1
 
 import PackageDescription
 
@@ -8,7 +8,7 @@ let package = Package(
         .library(name: "HKDF", targets: ["HKDF"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/IBM-Swift/BlueCryptor.git", from: "0.8.0"),
+        .package(url: "https://github.com/IBM-Swift/BlueCryptor.git", from: "1.0.13"),
     ],
     targets: [
         .target(name: "HKDF", dependencies: ["Cryptor"], path: "Sources"),
